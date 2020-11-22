@@ -47,8 +47,8 @@ Es posible tener más de un repositorio en diferentes lugares y mantenerlos a to
 #### 💡 Un repositorio, una rama
 Retomemos el último comando, justo despues de que creaste tu primer archivo ensayo.txt para escribir tu tarea de redactar un ensayo. Observa el primer gráfico. Veras que la estructura deL repositorio tiene tres lineas imaginarias paralelas, que he dibujado para poder explicarte mejor: 
 - WIP = (work in progress)
-- STAGING
-- MASTER 
+- Staging
+- Master
 
 Si en este momento abres el archivo de texto y empiezas a modificarlo, comienzas automaticamente a trabajar en la linea de WIP. Una vez termines de escribir todo lo que desees, seguramente guardaras tu archivo y lo cerrarás. Pero aun seguiras en la línea de work in progress y nada habra cambiado aun en el registro del repositorio. Para que esto suceda, primero debes enviar tu trabajo a la línea de "staging" con el comando:
 
