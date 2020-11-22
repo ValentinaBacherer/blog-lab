@@ -1,9 +1,9 @@
 # GUIA BASICA PARA USAR GIT
-## QUE ES GIT?
+## QUÉ ES GIT?
 Git es un sistema distribuido de control de versiones (SDCV) que nos ayuda a trabajar en equipo cuando
 vamos a llevar a cabo proyectos complejos donde una o varias personas pueden aportar con muchas ideas y se hace necesaria una estrategia para poder gestionar los cambios y el avance del proyecto.
 
-## PORQUE ES NECESARIO USAR GIT?
+## PORQUÉ ES NECESARIO USARLO?
 Si alguna vez intentaste realizar un ensayo final para una tarea de la escuela, seguramente puedes recordar que tuviste 
 que abrir y guardar el documento multiples veces: cuando lo creaste y pusiste el primer título, cada vez que fuiste
 agregando un parrafo nuevo, cuando cambiaste un titulo que ya no te gusto, o cuando se lo
