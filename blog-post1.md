@@ -120,11 +120,11 @@ donde debemos indicar la direccion donde se guarda el repositorio. Esto importar
 
 - cd JSFS-2020-11-M-GIT-kata
 
-para saber en que rama estamos, podemos ejecutar el comando anteriormente señalado, que nos dira que estamos en master o main. Como no podemos hacer los cambios directamente en la rama master, y tampoco en la rama release, debemos crear una rama auxiliar para implementar nuestra nueva feature. Creamos la rama my-feature y nos paramos en ella con un solo comando:
+para saber en que rama estamos, podemos ejecutar el comando anteriormente señalado, que nos dira que estamos en master o main. Como, para efectos de este ejercicio queremos simular un entorno de trabajo real, no podemos hacer los cambios directamente en la rama master, y tampoco en la rama release, debemos crear una rama auxiliar para implementar nuestra nueva feature. Creamos la rama my-feature y nos paramos en ella con un solo comando:
 
 - git checkout -b my-feature
 
-Ahora podemos hacer todos los cambios necesarios en la nueva rama, utilizando los comandos mencionados en las anteriores secciones. Cuando hayamos terminado de trabajar en my-feature, debemos integrar nuestros cambios con la rama release, resolver conflictos si hubieran y realizar un pull request para que el encargado de adminstrar esa rama en el repositorio remoto pueda revisar y aceptar nuestros cambios.
+Ahora podemos hacer todos los cambios necesarios en la nueva rama, utilizando los comandos mencionados en las anteriores secciones. Hay que tener en cuenta que antes de comenzar a hacer cambios, siempre debemos verificar que tenemos el repositorio local actualizado, haciendo un git pull de la rama madre(main) en el repositorio local y luego volviendo a nuestra branch a hacer los cambios. Cuando hayamos terminado de trabajar en my-feature, debemos integrar nuestros cambios con la rama release, resolver conflictos si hubieran y realizar un pull request para que el encargado de adminstrar esa rama en el repositorio remoto pueda revisar y aceptar nuestros cambios.
 Primero nos paramos en la rama release y nos aseguramos que este actualizada con el comando:
 
 - git pull origin release
@@ -133,7 +133,11 @@ Luego nos paramos nuevamente en la rama my-feature y le incorporamos la informac
 
 - git merge release
 
-Si hubieran conflictos, debemos resolverlos. Por último, subimos nuestra rama al repositorio con el comando:
+Si hubieran conflictos, debemos resolverlos. Para revisar el estado del merge en la rama que estamos podemos ejecutar el comando:
+
+- git branch --merged
+
+Por último, subimos nuestra rama al repositorio con el comando:
 
 - git push -set-upstream origin my-feature
 
@@ -173,3 +177,6 @@ Sincroniza un repositorio remoto con tu repositorio local.
 
 - git remote -v
 Verificar el repositorio remoto.
+
+- git push -u origin myfeaturebranch
+Crea una nueva branch en el repositorio remoto. Parece que es lo mismo que git push -set-upstream origin my-feature?
