@@ -129,7 +129,7 @@ Primero nos paramos en la rama release y nos aseguramos que este actualizada con
 
 - git pull origin release
 
-Luego nos paramos nuevamente en la rama my-feature y le incorporamos la informacion de release que acabamos de actualizar:
+Tomar en cuenta que git pull = git fetch + git merge. Luego nos paramos nuevamente en la rama my-feature y le incorporamos la informacion de release que acabamos de actualizar:
 
 - git merge release
 
@@ -171,9 +171,22 @@ Para sacar un archivo del staging.
 
 Te muestra las diferencias entre lo que esta en el repositorio (local) y lo que esta en WIP
 
+- git fetch <repositorio>
+
+Descarga objetos y referencias de otro repositorio.
+
+
+Para hacer un push de un repositorio existente desde la consola:
+
 - $ git remote add origin https://github.com/user/repo.git
 
-Sincroniza un repositorio remoto con tu repositorio local.
+Sincroniza un repositorio remoto con tu repositorio local. Aqui debes haber creado previamente el repositorio en GitHub, y estar dentro de la carpeta del repositorio local. Es necesario que tengan el mismo nombre los directorios?
+Si estamos vinculando el repositorio por primera vez, debemos ademas crear el master o main y sincronizarlos:
+
+- git remote add origin https://github.com/ValentinaBacherer/www-lab.git
+- git branch -M main
+- git push -u origin main
+
 
 - git remote -v
 Verificar el repositorio remoto.
