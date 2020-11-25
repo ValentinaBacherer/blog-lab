@@ -137,6 +137,10 @@ Si hubieran conflictos, debemos resolverlos. Para revisar el estado del merge en
 
 - git branch --merged
 
+Que nos mostrara las ramas que ya fueron incorporadas. Tambien podemos ejecutar el comando:
+- git branch --no-merged
+para ver las ramas que no fueron incorporadas aun.
+
 Por último, subimos nuestra rama al repositorio con el comando:
 
 - git push -set-upstream origin my-feature
@@ -187,6 +191,13 @@ Si estamos vinculando el repositorio por primera vez, debemos ademas crear el ma
 - git branch -M main
 - git push -u origin main
 
+Para renombrar la rama master to main:
+- $ git branch -m  master main
+
+
+
+Para ver el last commit en cada rama:
+- git branch -v
 
 - git remote -v
 Verificar el repositorio remoto.
