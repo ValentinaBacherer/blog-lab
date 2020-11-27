@@ -192,8 +192,11 @@ Si estamos vinculando el repositorio por primera vez, debemos ademas crear el ma
 - git push -u origin main
 
 Para renombrar la rama master to main:
-- $ git branch -m  master main
+- git branch -m  master main
 
+
+Para remover el origen
+- git remote remove origin
 
 
 Para ver el last commit en cada rama:
@@ -204,3 +207,9 @@ Verificar el repositorio remoto.
 
 - git push -u origin myfeaturebranch
 Crea una nueva branch en el repositorio remoto. Parece que es lo mismo que git push -set-upstream origin my-feature?
+
+Para remover el repositorio (en la rama master del repositorio):
+- git remote remove origin
+
+
+  
