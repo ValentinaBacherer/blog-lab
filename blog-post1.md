@@ -211,5 +211,7 @@ Crea una nueva branch en el repositorio remoto. Parece que es lo mismo que git p
 Para remover el repositorio (en la rama master del repositorio):
 - git remote remove origin
 
+Eliminar un repositorio creado con git init:
+- rm -fr .git
 
   
