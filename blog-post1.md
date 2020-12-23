@@ -214,4 +214,7 @@ Para remover el repositorio (en la rama master del repositorio):
 Eliminar un repositorio creado con git init:
 - rm -fr .git
 
+Eliminar una carpeta  (paintjs)
+- rm -rf paintjs
+
   
