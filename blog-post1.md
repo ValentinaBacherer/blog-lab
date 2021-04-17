@@ -217,4 +217,14 @@ Eliminar un repositorio creado con git init:
 Eliminar una carpeta  (paintjs)
 - rm -rf paintjs
 
+## Merge Conflict
+
+source : https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+If you want to see which files are unmerged at any point after a merge conflict, you can run:
+git status
+
+
+
+
+
   
