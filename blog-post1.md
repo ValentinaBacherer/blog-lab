@@ -198,6 +198,13 @@ Para renombrar la rama master to main:
 Para remover el origen
 - git remote remove origin
 
+fetch rama origin
+
+git fetch origin feature/module-user-progress-model
+
+borrar rama
+git branch -d feature/module-user
+forzar (-D)
 
 Para ver el last commit en cada rama:
 - git branch -v
